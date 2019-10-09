@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculComponent implements OnInit {
 carre:number;
-calculcarre(event:any){
-  
+
+oncalculcarre(x:number)
+{
+this.carre =x*x;
 }
   
  

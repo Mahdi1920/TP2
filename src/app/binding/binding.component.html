@@ -1,0 +1,10 @@
+<h1> Bonjour {{nom}}</h1>
+<h1>{{infos()}}</h1>
+<input type=" text" value=""/>
+<button [disabled]="actif">ok</button>
+<!--<button bind-disabled="!actif" (click)="onAfficher()"> Afficher</button>-->
+<!--<input type ="text" (keyup)="onKeyUp($event)" />-->
+<!--<input type ="text" (keyup.enter)="onKeyUp($event)" />-->
+<input type ="text" #textbox />
+<button (click)="onAfficherContenu(textbox.value)">Afficher</button>
+{{contenu}}

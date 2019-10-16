@@ -1,7 +1,7 @@
 <h1>Opérations de calcul</h1>
-Donnez un premier nombre :<input type="number"   />
-<input type="text" #cr />
+Donnez un premier nombre :<input type="number" (keyup)="onKeyUp($event)" #nbr1  />
 <p> Le carré est {{carre}}:</p>
-Donnez un deuxième nombre :<input type="number" value="" /><br/>
-<button >somme</button>
-<p>somme :</p>
+Donnez un deuxième nombre :<input type="number" (keyup)="0"  #nbr2/><br/>
+
+<button (click)="Somme(nbr1.value,nbr2.value)" [disabled]="nbr1.value=='' || nbr2.value=='' ">somme</button>
+<p>somme : {{som}}</p>

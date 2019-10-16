@@ -1,0 +1,17 @@
+<h2>Affichage des boutons des éléments pairs du tableau</h2>
+<!--<ul>
+    <li *ngFor="let t of tab ; let indice=index">
+        {{t}}<button *ngIf="t%2==0" (click)="onPosition(indice)">Position</button>
+    </li>
+</ul>
+<ul>
+<ng-container *ngFor="let t of tab">
+<li *ngIf="t%2==0"> {{t}}</li>
+</ng-container>
+</ul>-->
+<ul>
+    <ng-container *ngFor="let t of tab">
+    <li *ngIf="t%2==0">{{p}}</li>
+     <li *ngIf="t%2!=0">{{ip}}</li>
+    </ng-container>>
+<ul>

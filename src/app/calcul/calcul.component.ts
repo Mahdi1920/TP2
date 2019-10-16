@@ -7,13 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculComponent implements OnInit {
 carre:number;
-
-oncalculcarre(x:number)
+som:number;
+actif:boolean=true;
+onKeyUp(event:any)
 {
-this.carre =x*x;
-}
+  this.carre=((event.target.value)*(event.target.value)); 
+} 
   
- 
+Somme(a:string,b:string)
+{
+  this.som=Number(a)+Number(b);
+}
 
   constructor() { }
   
